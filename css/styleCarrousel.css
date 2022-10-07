@@ -1,24 +1,40 @@
 #bodyCarrousel {
-    width: 100%;
+    width: auto;
     height: auto;
     border: solid 4px var(--secondaryColor);
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
     position: relative;
     overflow: hidden;
+    align-items: center;
     margin: auto;
-    z-index: 2;
+    display: none
 }
 
-@media screen and (min-width: 320px) {
+#bodyGalerie {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:817px) {
     #bodyCarrousel {
-        width: 800px;
+        display: block;
+    }
+
+    #bodyGalerie {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 817px) {
+    #bodyCarrousel {
+        max-width: 800px;
         height: auto;
         border: solid 4px var(--secondaryColor);
         box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
         overflow: hidden;
         position: relative;
         margin: auto;
-        z-index: 2;
     }
 }
 
@@ -29,14 +45,12 @@
     justify-content: center;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 817px) {
     #carrouselContainer {
         width: 100%;
         height: auto;
         display: flex;
         justify-content: center;
-
-
     }
 }
 
@@ -47,40 +61,37 @@
     background-size: cover;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 817px) {
     .arthurPicturesCarrousel {
-        width: 800px;
-        height: 400px;
+        max-width: 800px;
+        min-height: 400px;
         display: inline-block;
         background-size: cover;
     }
 }
+
 
 .boutonCarrousel {
     position: absolute;
     width: 40px;
     cursor: pointer;
     top: 75px;
-
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 817px) {
     .boutonCarrousel {
         position: absolute;
         width: 70px;
         cursor: pointer;
         top: 150px;
-
     }
 }
-
 
 #boutonCarrouselLeft {
     left: 0;
     opacity: 0.4;
     transform: rotate(0deg);
     transition: all 0.3s ease;
-
 }
 
 #boutonCarrouselRight {
@@ -90,7 +101,8 @@
     transition: all 0.3s ease;
 }
 
-#boutonCarrouselLeft:hover {
+#boutonCarrouselLeft:hover,
+.navigationManual:hover {
     transform: rotate(0deg) scale(1.1);
     opacity: 1;
     transition: all 0.3s ease;
@@ -100,4 +112,9 @@
     transform: rotate(180deg) scale(1.1);
     opacity: 1;
     transition: all 0.3s ease;
+}
+
+.galerie img {
+    max-width: 100vw;
+    margin-bottom: 3rem;
 }

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="css/decoPictures/favicon.ico" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/expression.css" />
     <link rel="stylesheet" href="css/commentary.css" />
@@ -13,15 +14,17 @@
     <link rel="stylesheet" href="css/styleFooter.css" />
 
     <!--Style CSS carrousel responsive Charline-->
-    <title>Document</title>
+    <title>Arthur HTBK</title>
 </head>
 
 <body>
+
     <!-- sur branche header -->
     <header>
-        <div id="fixed">
+        <div id="navButtonMobile">
+            <img src="css/decoPictures/button.png" alt="button du menu" class="button" />
             <div id="headerNavMobile">
-                <nav class="disparu">
+                <nav>
                     <ul>
                         <a href="#presentation">
                             <li>Présentation</li>
@@ -39,75 +42,103 @@
                             <li>Commentaires</li>
                         </a>
                     </ul>
-                </nav>
+                    <div id="close"><img src="css/decoPictures/close.png" alt="bouton de fermeture" /></div>
             </div>
-            <div id="headerNavDesk">
-                <div id="headerNavName">
-                    <div class="navItem"><a href="#presentation">Présentation</a></div>
-                    <div class="navItem"><a href="#carrousel">Photos</a></div>
-                    <div class="navItem"><a href="#expression">Musique</a></div>
-                    <div class="navItem"><a href="#empreinte">Empreinte numérique</a></div>
-                    <div class="navItem"><a href="#commentaires">Commentaires</a></div>
-                </div>
-                <div class=" headerNavLign"></div>
-                <div class="headerNavLign"></div>
-                <div class="headerNavLign" id="clef"></div>
-                <div class=" headerNavLign"></div>
-                <div class="headerNavLign"></div>
-            </div>
-            </nav>
         </div>
+        <div id="navButtonDesk">
+            <div id="headerNavDesk">
+                <div id="ligns">
+                    <div class=" headerNavLign"></div>
+                    <div class="headerNavLign"></div>
+                    <div class="headerNavLign" id="clef"></div>
+                    <div class=" headerNavLign"></div>
+                    <div class="headerNavLign"></div>
+                    <div id="headerNavName">
+                        <div class="navItem"><a href="#presentation">Biographie</a></div>
+                        <div class="navItem"><a href="#carrousel">Photos</a></div>
+                        <div class="navItem"><a href="#expression">Musique</a></div>
+                        <div class="navItem"><a href="#empreinte">Empreinte numérique</a></div>
+                        <div class="navItem"><a href="#commentaires">Commentaires</a></div>
+                    </div>
+                </div>
+                <img src="css/decoPictures/button.png" class="button" alt="archet stylisé de décoration" />
+            </div>
+        </div>
+
+
     </header>
     <main>
         <section id="presentation">
             <h1>Présentation</h1>
             <div>
                 <div>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id est laborum."</p>
+
+                    <p><span id="titleArticleArthur"> Qui est Arthur ? <br /> <br /></span>
+                        <span> Tout en restant dans le respect de sa vie privée... <br /></span>
+                        <span> Arthur est un jeune homme (je crois), de 30 ans, né en 1992, ainé d'une famille
+                            de 8
+                            enfants
+                            (dont des jumeaux). <br /></span>
+                        <span>Il est l'heureux papa d'un petit garçon (qui ne sait pas sauter) et a une
+                            magnifique compagne passionée par la musique et le violon. <br /></span>
+                        <span> Arthur (comme tous ses frères et soeurs) est un artiste. A l'instar de sa compagne, il
+                            est
+                            passioné
+                            par le violon et la musique. Il a joué dans plusieurs concerts, festivals et a même eu
+                            l'envie d'en faire
+                            son
+                            métier.</span>
+
+                    </p>
                 </div>
                 <div>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id est laborum."</p>
+                    <p><br /><br /><span>Covid oblige, il s'est retrouvé dans une situation compliquée vis-à-vis de son
+                            projet de
+                            devenir
+                            intermitent du spectacle. Il
+                            a donc décidé de se lancer dans le developpement web, sans trop de convictions au
+                            départ. <br /></span>
+                        <span> En continuant à coder, et à faire notamment des bootcamps, il a développé une nouvelle
+                            passion pour
+                            le code. <br />
+                            <span>En recherche d'une première expérience professionnelle dans le developpement, il est
+                                arrivé à la Wild Code School et nous a sauvé de 5 mois de remote (en présentiel) en
+                                devenant notre
+                                formateur.
+                                <br /></span>
+
+                    </p>
                 </div>
             </div>
         </section>
-        <img src="css/decoPictures/archet_stylised.png" class="archet" />
+        <img src="css/decoPictures/archet_couleur.svg" class="archet" alt="archet stylisé de décoration" />
         <section id="carrousel">
-            <h1>Carrousel</h1>
+            <h1>Arthur en images</h1>
 
             <!--Debut carrousel responsive Charline-->
             <div id="bodyCarrousel">
 
+
                 <div id="carrouselContainer">
                 </div>
-                <img src="css/decoPictures/fleche.png" class="boutonCarrousel" id="boutonCarrouselRight" />
-                <img src="css/decoPictures/fleche.png" class="boutonCarrousel" id="boutonCarrouselLeft" />
+                <img src="css/decoPictures/fleche.png" class="boutonCarrousel" id="boutonCarrouselRight"
+                    alt="flèche droite" />
+                <img src="css/decoPictures/fleche.png" class="boutonCarrousel" id="boutonCarrouselLeft"
+                    alt="flèche gauche" />
+            </div>
+            <div id="bodyGalerie">
+
             </div>
             <!--Fin carrousel responsive Charline-->
-        </section>
-        <img src="css/decoPictures/archet_stylised.png" class="archet" />
 
-        <section class="expression">
-            <h1>Musique par Arthur</h1>
+
+        </section>
+        <img src="css/decoPictures/archet_couleur.svg" class="archet" alt="archet stylisé de décoration" />
+        <section id="expression">
+            <h1>Création originale</h1>
 
             <!-- lecteur de musique  -->
             <div class="expressionPlayerAudio">
-
-                <!-- titre principale  -->
-                <!-- <h2>Sound made in Arthur</h2> -->
 
                 <!-- Lecteur N°1 -->
                 <figure>
@@ -136,42 +167,113 @@
                 <div class="expressionOrale">
                     <!-- titre principale  -->
 
+                    <div class="expressionTitre">
+                        <h2>Expression orale</h2>
+                        <p class=expressionTitreExplication>("Click sur une photo pour entendre une expression
+                            d'arthur")</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <img src="css/decoPictures/archet_stylised.png" class="archet" />
+
+        <img src="css/decoPictures/archet_couleur.svg" class="archet" alt="archet stylisé de décoration" />
         <section id="empreinte">
             <h1>Empreinte numérique</h1>
+
             <div>
-                <div>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum
-                        dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                        officia
-                        deserunt mollit anim id est laborum."</p>
+                <div class="empreinteNumerique">
+                    <div class="empreinteNumerique1">
+                        <p><span class="titleArticleEmpreinte">Qu’est-ce que l’empreinte numérique ? <br /><br /></span>
+                            <span> L’<b>empreinte numérique</b>, appelée aussi ombre numérique ou empreinte
+                                électronique,
+                                représente les <b>données récoltées sur internet</b> (visites de sites, données
+                                personnelles,
+                                photos etc.).<br /></span>
+                            <span>Elle apparaît lors d’une inscription sur des sites, newsletters, cartes de fidélité
+                                en
+                                magasin
+                                mais également lors d’un post sur les réseaux sociaux, c’est donc l’<b>empreinte
+                                    numérique
+                                    active</b>.<br /></span>
+                            <span>Elle résulte de la <b>volonté de la personne</b> à donner ses informations
+                                personnelles,
+                                contrairement à l’<b>empreinte numérique passive</b> qui elle, est récoltée <b>sans
+                                    volonté</b> par
+                                notre
+                                adresse IP,
+                                nos sites visités, notre localisation et autres.
+                                En effet, nous avons peu de contrôle sur l’utilisation de nos données. Nous pouvons le
+                                voir
+                                sur les réseaux sociaux et les suggestions d’amis qui apparaissent comme par magie alors
+                                que
+                                nous n’avons jamais été visité leur profil (localisation, connexion sur le même réseaux
+                                wifi, amis
+                                en communs etc.)
+                                <br /></span>
+                    </div>
+
+                    <div class="empreinteNumerique2"><span> <br /><br /><br /> ou alors sur des publicités qui
+                            apparaissent et qui correspondent
+                            exactement à
+                            ce que vous cherchez en ce moment.<br />
+                            La <b>revente de nos données</b> est quotidienne
+                            et
+                            permet à des
+                            entreprises de nous
+                            démarcher afin de se faire de nouveaux clients (il y a un business et des millions d’euros
+                            générés
+                            grâce aux données personnelles présentes sur internet).<br /></span>
+                        <span>L’empreinte numérique peut avoir un impact direct sur votre <b>vie personnelle</b>; comme
+                            par
+                            exemple un futur employeur qui veut en savoir un peu plus sur vous et qui tombe directement
+                            sur
+                            vos photos Facebook ou skyblog quand vous étiez adolescent, c’est ce qu’on appelle la
+                            <b>réputation
+                                numérique</b>.<br /></span>
+                        <span>Elle peut aussi être très dangereuse, en effet, la <b>cybercriminalité</b> est très
+                            présente
+                            (dardent,
+                            usurpation d’identité etc.)</span>
+                        </p>
+                    </div>
                 </div>
                 <div>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum
-                        dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                        officia
-                        deserunt mollit anim id est laborum."</p>
+                    <p class="titleArticleEmpreinte">Comment faire pour se protéger ? <br />
+                    <ul>
+                        <li>Vérifier la <b>confidentialité de ses réseaux</b> (profil privé/public, qui peut voir nos
+                            stories/
+                            publications, qui peut me contacter etc.),</li>
+                        <li>Faire une <b>recherche google avec nos nom/prénom</b> et supprimer ce qu’on ne veut plus
+                            voir,</li>
+                        <li>Utiliser des <b>adresses mails/numéro de téléphone jetable</b> (disponible en open source
+                            sur
+                            internet),</li>
+                        <li>Créer une <b>adresse mail sans informations personnelles</b> pour les cartes de fidélité,
+                            inscriptions
+                            sites e-commerces etc.,</li>
+                        <li>Eviter les <b>wifi public</b> (très peu sécurisés, voir pas du tout),</li>
+                        <li><b>Supprimer des vieux comptes</b> qui ne nous sont plus utiles,</li>
+                        <li>Utiliser un <b>générateur/gestionnaire de mot de passe</b> (exemple : keepass),</li>
+                        <li>Ne pas créer de comptes sur des sites via Facebook,</li>
+                        <li>Toujours <b>mettre à jour son téléphone et ordinateur</b> (anciennes versions pas stables),
+                        </li>
+                        <li>Utiliser un <b>VPN</b>,</li>
+                        <li>Protéger son entourage (pas de <b>photos d’enfants</b> sur les réseaux sociaux, demander
+                            l’<b>autorisation avant de poster</b> etc.),</li>
+                        <li>Ne <b>jamais brancher son téléphone pour le charger sur des port USB</b> directement dans le
+                            train,
+                            mur chambre d’hôtel etc.,</li>
+                        <li><b>Site spécialisé pour nettoyer son empreinte</b> et se désinscrire des newsletters,</li>
+                        <li>Possibilité de <b>contacter directement des entreprises</b> pour qu’ils suppriment nos
+                            données
+                            personnelles conformément à la <b>loi (RGPD)</b>.</li>
+                    </ul>
+                    </p>
                 </div>
+
             </div>
         </section>
-        <img src="css/decoPictures/archet_stylised.png" class="archet" />
+        <img src="css/decoPictures/archet_couleur.svg" class="archet" alt="archet stylisé de décoration" />
 
 
         <!--Début formulaire laurent-->
@@ -180,9 +282,7 @@
             <!--Début formulaire-->
             <form class="formContainers">
                 <div class="formHeader">
-                    <div>
-                        <label for="titre" class="formLabel">Titre</label>
-                    </div>
+                    <div class="formLabel">Note</div>
                     <div class="blocStar">
                         <div class="emptyStar" data-value="1"></div>
                         <div class="emptyStar" data-value="2"></div>
@@ -190,7 +290,15 @@
                         <div class="emptyStar" data-value="4"></div>
                         <div class="emptyStar" data-value="5"></div>
                     </div>
+
                 </div>
+                <div>
+                    <label for="titre" class="formLabel">Titre</label>
+
+
+
+                </div>
+
                 <div>
                     <input type="text" name="titre" class="formContainer formChamp" placeHolder="C'est super génial !"
                         id="formTitle" required>
@@ -220,62 +328,96 @@
                 <input type="hidden" name="note" id="note" value="0">
                 <button type="submit" class="formButton">Valider</button>
             </form>
+
+            <div class="popIn" id="pop">
+                <div><img class="popContent" src="css/assets/canvas.png" alt="bouton de fermeture">
+                    <div class="closeButton">
+                        Close
+
+                    </div>
+                </div>
+            </div>
+
             <!--Fin formulaire-->
+
+
 
             <!--Début affichage commentaires-->
 
             <div class="commentBoxes">
                 <div class="commentBox">
                     <div class="commentBoxHeader">
-                        <div class="commentBoxHeaderContent">title</div>
-                        <div class="commentBoxHeaderContent">note</div>
+                        <div class="commentBoxHeaderContent">C'était un peu naze</div>
+                        <div class="commentBoxHeaderContent">1/5</div>
                     </div>
-                    <div class="commentBoxContent">content</div>
+                    <div class="commentBoxContent">Si c'était pour faire ça, fallait pas venir.</div>
 
                     <div class="commentBoxFooter">
-                        <div>nom</div>
+                        <div>Rémy</div>
                     </div>
 
                 </div>
                 <div class="commentBox">
                     <div class="commentBoxHeader">
-                        <div class="commentBoxHeaderContent">title</div>
-                        <div class="commentBoxHeaderContent">note</div>
+                        <div class="commentBoxHeaderContent">Mouais bof</div>
+                        <div class="commentBoxHeaderContent">2/5</div>
                     </div>
-                    <div class="commentBoxContent">content</div>
+                    <div class="commentBoxContent">Ca aurait pu être pire, Arthur...</div>
 
                     <div class="commentBoxFooter">
-                        <div>nom</div>
+                        <div>Marie-Hermine</div>
+
                     </div>
 
                 </div>
                 <div class="commentBox">
                     <div class="commentBoxHeader">
-                        <div class="commentBoxHeaderContent">title</div>
-                        <div class="commentBoxHeaderContent">note</div>
+
+                        <div class="commentBoxHeaderContent">TROP BIEN !!</div>
+                        <div class="commentBoxHeaderContent">5/5</div>
                     </div>
-                    <div class="commentBoxContent">content</div>
+                    <div class="commentBoxContent">JE KIFF ! Mais j'en peux plus de toi...</div>
 
                     <div class="commentBoxFooter">
-                        <div>nom</div>
+                        <div>CHaCha</div>
                     </div>
 
+                </div>
+
+            </div>
+            <div class="buttonDiv">
+                <button class="formButton" id="dataButton">Données</button>
+            </div>
+            <div class="popIn" id="dataList">
+                <div class="flexContainer">
+                    <ul class="popContentMail" id="mailList">
+                        <h2>Ce qu'on a récupéré et qu'on peut revendre ($$$)</h2>
+                    </ul>
+                    <div class="closeButton" id="closeMailList">Close</div>
                 </div>
             </div>
         </section>
         <!--Fin section commentaire laurent-->
-        <img src="css/decoPictures/violon.png" class="archet" />
+        <img src="css/decoPictures/violon.png" class="archet" alt="archet stylisé de décoration" />
 
     </main>
     <footer>
-        <p>© 2022 - Projet Un</p>
-        <a href="https://www.wildcodeschool.com/" target="_blank"><img src=" css/decoPictures/WildNetB.png" /></a>
-        <p>Site web développé par Charline Vergoz, Laurent Duclos, Rémy Bernardin et Marie-Hermine Schneider</p>
+        <div> <img src="css/decoPictures/logo.svg" alt="logo de la team dev" />
+        </div>
+        <div>
+            <p>© 2022 - Projet Un</p>
+            <a href="https://www.wildcodeschool.com/" target="_blank"><img src=" css/decoPictures/WildNetB.png"
+                    alt="logo Wild Code School" /></a>
+            <p>Site web développé par Charline Vergoz, Laurent Duclos, Rémy Bernardin et Marie-Hermine Schneider</p>
+
     </footer>
     <script src="index.js"></script>
     <script src="comm.js"></script>
     <script src="header.js"></script>
     <script src="carrousel.js"></script>
+    <script src="expression.js"></script>
+    <script src="galerie.js"></script>
+
 
 </body>
 
